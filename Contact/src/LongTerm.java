@@ -1,4 +1,4 @@
-package src;
+
 
 public class LongTerm implements Contract {
     private String contractID;
@@ -28,6 +28,11 @@ public class LongTerm implements Contract {
 
     @Override
     public Contract SignContract() {
+        System.out.println("LongTerm Contract Signed:");
+        System.out.println("Contract ID: " + contractID);
+        System.out.println("Property ID: " + propertyID);
+        System.out.println("Tenant ID: " + tenantID);
+        System.out.println("Rent Amount: $" + rentAmount);
         return this;
     }
 }

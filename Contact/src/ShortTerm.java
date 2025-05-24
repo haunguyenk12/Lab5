@@ -1,4 +1,4 @@
-package src;
+
 
 public class ShortTerm implements Contract {
     private String contractID;
