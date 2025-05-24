@@ -1,5 +1,3 @@
 public interface Document {
-    void SetExtension();
-    void SetEncryption();
-    Document BuildDoc();
+    void save(String directoryPath) throws Exception;
 }

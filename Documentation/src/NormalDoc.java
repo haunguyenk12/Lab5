@@ -1,25 +1,19 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class NormalDoc implements Document {
-    private String extension;
-    private String encryption;
+    private String name;
+    private String content;
 
-    @Override
-    public void SetExtension() {
-        extension = ".txt";
+    public NormalDoc(String name, String content) {
+        this.name = name;
+        this.content = content;
     }
 
     @Override
-    public void SetEncryption() {
-        encryption = "None";
-    }
-
-    @Override
-    public Document BuildDoc() {
-        System.out.println("Normal Document Created: " + extension + ", Encryption: " + encryption);
-        return this;
-    }
-
-    // Optional: Save file logic
-    public void SaveFile() {
-        System.out.println("Saving normal document as " + extension);
+    public void save(String directoryPath) throws IOException {
+        FileWriter writer = new FileWriter(directoryPath + "/" + name + ".txt");
+        writer.write(content);
+        writer.close();
     }
 }
