@@ -1,3 +1,5 @@
+package src;
+
 public class Permanent implements Contract {
     private String contractID;
     private String propertyID;

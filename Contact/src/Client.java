@@ -1,3 +1,5 @@
+package src;
+
 public class Client {
     public Contract requestCreateRentalContract(Contract builder) {
         builder.BuildContractID();
