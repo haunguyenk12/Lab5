@@ -18,7 +18,7 @@ public class EncryptDoc implements Document {
 
     @Override
     public void save(String directoryPath) throws Exception {
-        FileOutputStream fos = new FileOutputStream(directoryPath + "/" + name + ".zip");
+        FileOutputStream fos = new FileOutputStream(directoryPath + "/src/" + name + ".zip");
         ZipOutputStream zos = new ZipOutputStream(fos);
         ZipEntry entry = new ZipEntry(name + ".txt");
         zos.putNextEntry(entry);

@@ -12,7 +12,7 @@ public class NormalDoc implements Document {
 
     @Override
     public void save(String directoryPath) throws IOException {
-        FileWriter writer = new FileWriter(directoryPath + "/" + name + ".txt");
+        FileWriter writer = new FileWriter(directoryPath + "/src/" + name + ".txt");
         writer.write(content);
         writer.close();
     }
