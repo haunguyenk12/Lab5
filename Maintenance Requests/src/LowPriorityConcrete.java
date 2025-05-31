@@ -21,6 +21,10 @@ public class LowPriorityConcrete implements RequestProduct {
         setPriority();
         setStatus();
         setExpire();
+        System.out.println("Request processed with low priority");
+        System.out.println(priority);
+        System.out.println(status);
+        System.out.println(expireDay);
         System.out.println("Request denied");
     }
 

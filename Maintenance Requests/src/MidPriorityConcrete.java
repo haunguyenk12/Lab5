@@ -21,7 +21,11 @@ public class MidPriorityConcrete implements RequestProduct {
         setPriority();
         setStatus();
         setExpire();
-        System.out.println("Request accepted, estimated completion date is " + expireDay);
+        System.out.println("Request processed with medium priority");
+        System.out.println(priority);
+        System.out.println(status);
+        System.out.println(expireDay);
+        System.out.println("Request accepted");
     }
 
 }

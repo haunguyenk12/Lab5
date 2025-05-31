@@ -21,6 +21,10 @@ public class HighPriorityConcrete implements RequestProduct {
         setPriority();
         setStatus();
         setExpire();
+        System.out.println("Request processed with high priority");
+        System.out.println(priority);
+        System.out.println(status);
+        System.out.println(expireDay);
         System.out.println("Emergency request, our Administer will contact you immediately!");
     }
 
