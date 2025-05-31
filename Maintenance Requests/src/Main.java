@@ -5,7 +5,7 @@ public class Main {
         RequestCreator high = new HighPriorityConcreteCreator();
 
         low.processRequest();
-        mid.processRequest();
-        high.processRequest();
+        // mid.processRequest();
+        // high.processRequest();
     }
 }
